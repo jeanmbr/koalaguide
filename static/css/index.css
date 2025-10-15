@@ -1,0 +1,168 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo principal da página */
+body {
+    background-color: white;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/main_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header simplificado - sem logo */
+header {
+    padding: 20px 5%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navegação minimalista */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Esconde o logo */
+.logo {
+    display: none;
+}
+
+/* Seção Hero centralizada e mais alta */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    transform: translateY(-80px); /* Sobe o conteúdo */
+}
+
+.hero h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 120px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    color: white;
+    max-width: 600px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Container dos botões */
+.button-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo dos botões com fundo azul */
+.nav-button {
+    background-color: #012169;
+    color: white;
+    padding: 16px 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover {
+    background-color: #012169;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove a navegação antiga */
+.nav-links {
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 48px;
+    }
+    
+    .hero h2 {
+        font-size: 18px;
+    }
+    
+    .hero p {
+        font-size: 20px;
+    }
+    
+    .button-container {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-button {
+        padding: 15px 25px;
+        min-width: 200px;
+        font-size: 14px;
+    }
+    
+    .hero {
+        transform: translateY(-40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero h2 {
+        font-size: 16px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+    
+    .nav-button {
+        padding: 12px 20px;
+        min-width: 180px;
+        font-size: 13px;
+    }
+}
