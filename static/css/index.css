@@ -88,7 +88,7 @@ nav {
 
 /* Estilo dos botões com fundo azul */
 .nav-button {
-    background-color: #012169;
+    background-color: #FDDA0D;
     color: white;
     padding: 16px 50px;
     text-decoration: none;
@@ -106,7 +106,7 @@ nav {
 }
 
 .nav-button:hover {
-    background-color: #012169;
+    background-color: #fdad0d;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }

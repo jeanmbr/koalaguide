@@ -61,7 +61,6 @@ nav {
     color: #f9a826;
 }
 
-/* Seção Hero */
 .hero {
     height: 100vh;
     display: flex;
@@ -78,7 +77,7 @@ nav {
     font-weight: 400;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    margin-top: 1200px;
+    margin-top: 1700px;
     text-transform: uppercase;
 }
 
@@ -99,7 +98,6 @@ nav {
     line-height: 1.8;
 }
 
-/* Conteúdo sobre */
 .about-content {
     max-width: 900px;
     margin: 0 auto;
